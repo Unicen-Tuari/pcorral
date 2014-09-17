@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title> Quesos &quot;NELLY&quot; </title>
+    <link rel="stylesheet" type="text/css" href="muzza.css"/>
+    <script type="text/javascript" SRC=muzza.js> </script>
+  </head>
+
+  <body>
+    <header>
+    </header>
+
+    <nav>
+      <ul id="menu">  
+        <li><a href="inicio.html">Inicio</a></li>
+        <li><a href="listado.php">Productos</a></li>
+        <li><a href="historia.html">Historia</a></li>
+        <li><a href="mision.html">Misi&oacute;n</a></li>
+        <li><a href="valores.html">Valores</a></li>
+        <li><a href="ubicacion.html">Ubicaci&oacute;n</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul> 
+      </nav>
+
+    <section class = "contacto">
+      <form id="miForm" action="" method="get" onsubmit="validar(this)">
+        <h1>CONTACTO</h1>
+        <label for="nombre">Nombre: </label>
+        <input type="text" name="nombre" id="nombre" >
+        <label for="telefono">Tel&eacute;fono: </label>
+        <input type="number" name="telefono" id="telefono" >
+        <label for="correo">e-mail: </label>
+        <input type="email" name="correo" id="correo" >
+        <label for="mensaje">Mensaje: </label>
+        <textarea id="mensaje" name="mensaje" placeholder="Escriba su mensaje"></textarea>
+        <input type="submit" value="enviar" onsubmit="return validar(this);">
+      </form>
+    </section>
+
+    <footer>
+      <p>
+        Lopez y Planes 50, Pehuaj&oacute;, Pcia. Buenos Aires, Argentina. e-mail quesosnelly@gmail.com
+      </p>
+    </footer>
+  </body>
+</html>
