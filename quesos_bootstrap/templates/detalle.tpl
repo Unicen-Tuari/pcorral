@@ -1,0 +1,31 @@
+{include file="header.tpl"}
+
+<section class="container">
+
+{foreach $producto as $queso}
+	<div class="row">
+		<div class="col-xs-8 col-md-8">
+			<h2> {$queso.nombre} </h2>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-8 col-md-8">
+			<p>{$queso.descripcion}</p>
+			<ul id='listDePropiedades'>
+				<li>Maduraci&oacute;n: {$queso.maduracion} d&iacute;as</li>
+				<li>Presentaci&oacute;n: Horma {$queso.presentacion} kg.</li>
+				<li>Conservaci&oacute;n: {$queso.conservacion} &deg;.</li>
+			</ul>
+			<button type="submit" class="btn btn-default bot" onclick="location.href='carrito.php'">comprar</button>
+		</div>
+		<div class="col-xs-4 col-md-4">
+			<img class="img-responsive" src="{$queso.imagen}">
+		</div>
+	</div>
+
+		
+{/foreach}
+
+</section>
+
+{include file="footer.tpl"}
