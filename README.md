@@ -2,16 +2,16 @@
 
 #Página Web de Empresa de productos lacteos
 
-#Hacer.
+##Hacer.
 *Carrito de compras.
 *Busquedas de productos.
 
-#1ra Entrega 21 Oct.
+##1ra Entrega 21 Oct.
 *Rehacer la pagina con MVC + Bootrsap + Smarty.
 *Agregar lo de la busqueda usando Ajax.
 *Maqueta del carrito de compras.
 
-#2da Entrega - Ajax.
+##2da Entrega - Ajax.
 *Administrador.
 *Usuarios.
 *Productos.
