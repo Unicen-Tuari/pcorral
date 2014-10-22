@@ -36,7 +36,7 @@
 			<p> $200 </p>
 		</div>
 		<div class="col-xs-1 col-md-1">
-			<button>x</button>
+			<button><span class="glyphicon glyphicon-trash"></span></button>
 		</div>
 	</div>
 	<div class="row fila">

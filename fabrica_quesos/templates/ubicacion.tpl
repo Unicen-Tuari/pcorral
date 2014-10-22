@@ -2,7 +2,7 @@
 
 <div class="container">
 	<div class="row">
-		<div class="col-xs-12 col-md-12"><h2> UBICACI&Oacute;N </h2></div>
+		<div class="col-xs-12 col-md-12"><h2> Ubicaci&oacute;n </h2></div>
 	</div>
 	<div class="row">
 		<div class="col-xs-6 col-md-6">

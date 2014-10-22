@@ -1,29 +1,29 @@
-<?php /* Smarty version Smarty-3.1.14, created on 2014-09-27 21:58:03
+<?php /* Smarty version Smarty-3.1.14, created on 2014-10-18 01:29:56
          compiled from ".\templates\valores.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:28572542716cb8eb489-66635288%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:245415441a674bb5123-12027738%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'bc37a6a31e8e9a1e071235ba9452af0c62604ad3' => 
     array (
       0 => '.\\templates\\valores.tpl',
-      1 => 1411166300,
+      1 => 1412472673,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '28572542716cb8eb489-66635288',
+  'nocache_hash' => '245415441a674bb5123-12027738',
   'function' => 
   array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.14',
-  'unifunc' => 'content_542716cba95d85_66783883',
+  'unifunc' => 'content_5441a674de79a6_54458598',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_542716cba95d85_66783883')) {function content_542716cba95d85_66783883($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
+<?php if ($_valid && !is_callable('content_5441a674de79a6_54458598')) {function content_5441a674de79a6_54458598($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
 
 
 <section class="container">
-	<h2> VALORES </h2>
+	<h2> Valores </h2>
 	<h3> Integridad: </h3>
 	<p>Asumir una conducta honesta, transparente, coherente, austera y responsable. Ya que para la realizacion de cada actividad, los responsables de la empresa tienen en claro que deben asumir la responsabilidad de los riesgos de su accionar.</p>
 	<h3> El cliente: </h3>

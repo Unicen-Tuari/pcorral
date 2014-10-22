@@ -1,7 +1,7 @@
 {include file="header.tpl"}
 
 <section class="container">
-	<h2> VALORES </h2>
+	<h2> Valores </h2>
 	<h3> Integridad: </h3>
 	<p>Asumir una conducta honesta, transparente, coherente, austera y responsable. Ya que para la realizacion de cada actividad, los responsables de la empresa tienen en claro que deben asumir la responsabilidad de los riesgos de su accionar.</p>
 	<h3> El cliente: </h3>

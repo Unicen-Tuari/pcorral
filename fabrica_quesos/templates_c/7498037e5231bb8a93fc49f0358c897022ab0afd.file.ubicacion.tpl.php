@@ -1,30 +1,30 @@
-<?php /* Smarty version Smarty-3.1.14, created on 2014-09-27 21:58:07
+<?php /* Smarty version Smarty-3.1.14, created on 2014-10-18 01:30:00
          compiled from ".\templates\ubicacion.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:15781542716cf7de8e2-43051360%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:223545441a6782d4543-06597990%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '7498037e5231bb8a93fc49f0358c897022ab0afd' => 
     array (
       0 => '.\\templates\\ubicacion.tpl',
-      1 => 1411223961,
+      1 => 1412472695,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '15781542716cf7de8e2-43051360',
+  'nocache_hash' => '223545441a6782d4543-06597990',
   'function' => 
   array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.14',
-  'unifunc' => 'content_542716cf94c2f7_42847548',
+  'unifunc' => 'content_5441a6783f9517_27541033',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_542716cf94c2f7_42847548')) {function content_542716cf94c2f7_42847548($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
+<?php if ($_valid && !is_callable('content_5441a6783f9517_27541033')) {function content_5441a6783f9517_27541033($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
 
 
 <div class="container">
 	<div class="row">
-		<div class="col-xs-12 col-md-12"><h2> UBICACI&Oacute;N </h2></div>
+		<div class="col-xs-12 col-md-12"><h2> Ubicaci&oacute;n </h2></div>
 	</div>
 	<div class="row">
 		<div class="col-xs-6 col-md-6">

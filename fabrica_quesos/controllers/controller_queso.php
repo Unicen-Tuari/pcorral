@@ -1,5 +1,5 @@
 <?php
-class Controllerindex
+class ControllerQueso
 {
 	private $model;
 	private $view;
@@ -27,5 +27,18 @@ class Controllerindex
 		}
 	}
 
+
+	public function imprimirConsulta($nombre, $template)
+	{
+		$consulta=$this->model->consultaQuesos($nombre);
+		if ($consulta == null)
+		{
+			return false;
+		}
+		else
+		{
+			$this->view->generaDetalle($consulta, $template);
+		}
+	}
 }
 ?>

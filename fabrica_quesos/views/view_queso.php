@@ -1,6 +1,6 @@
 <?php
 require('./libs/Smarty.class.php');
-class Viewindex
+class ViewQueso
 {
 	private $smarty;
 	private $template_name;
@@ -19,10 +19,6 @@ class Viewindex
 	{
 		$this->smarty->assign("nombre_queso",$datos);
 		$this->smarty->display($template);
-	}
-	public function generaAlerta()
-	{
-		$this->smarty->display('alerta.tpl');
 	}
 }
 ?>

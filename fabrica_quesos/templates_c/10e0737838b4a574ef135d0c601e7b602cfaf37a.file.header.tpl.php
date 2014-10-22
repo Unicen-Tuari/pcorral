@@ -1,25 +1,25 @@
-<?php /* Smarty version Smarty-3.1.14, created on 2014-09-28 18:44:47
+<?php /* Smarty version Smarty-3.1.14, created on 2014-10-20 03:21:08
          compiled from ".\templates\header.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:71215425e9319b5978-91893037%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:250915441a4e4921932-89735109%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '10e0737838b4a574ef135d0c601e7b602cfaf37a' => 
     array (
       0 => '.\\templates\\header.tpl',
-      1 => 1411922673,
+      1 => 1413768063,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '71215425e9319b5978-91893037',
+  'nocache_hash' => '250915441a4e4921932-89735109',
   'function' => 
   array (
   ),
   'version' => 'Smarty-3.1.14',
-  'unifunc' => 'content_5425e9319ffd04_32480008',
+  'unifunc' => 'content_5441a4e4929631_30611590',
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5425e9319ffd04_32480008')) {function content_5425e9319ffd04_32480008($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_5441a4e4929631_30611590')) {function content_5441a4e4929631_30611590($_smarty_tpl) {?><!DOCTYPE html>
 
 <html lang="en">
 	<head>
@@ -29,6 +29,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		<title> F&aacute;brica de Quesos</title>
 		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
 		<link href="css/queso.css" rel="stylesheet" media="screen">
+		<link rel="stylesheet" href="css/jquery.typeahead.css">
+		<script src="./js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="./js/jquery.typeahead.js"></script>
 	</head>
 
 	<body>
@@ -44,7 +47,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 			</div>
 		</header>
 
-		<nav class="navbar navbar-default navbar-inverse">
+		<nav class="navbar navbar-default">
 			<a class="navbar-brand" href="index.php">Inicio</a>
 			<a class="navbar-brand" href="listado.php?action=listar_quesos">Productos</a>
 			<a class="navbar-brand" href="historia.php">Historia</a>
