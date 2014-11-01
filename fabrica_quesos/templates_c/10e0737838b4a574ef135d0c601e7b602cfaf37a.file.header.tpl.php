@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.14, created on 2014-10-20 03:21:08
+<?php /* Smarty version Smarty-3.1.14, created on 2014-10-25 01:42:53
          compiled from ".\templates\header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:250915441a4e4921932-89735109%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '10e0737838b4a574ef135d0c601e7b602cfaf37a' => 
     array (
       0 => '.\\templates\\header.tpl',
-      1 => 1413768063,
+      1 => 1414194144,
       2 => 'file',
     ),
   ),
@@ -29,9 +29,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		<title> F&aacute;brica de Quesos</title>
 		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
 		<link href="css/queso.css" rel="stylesheet" media="screen">
-		<link rel="stylesheet" href="css/jquery.typeahead.css">
 		<script src="./js/jquery-1.11.1.min.js"></script>
-		<script type="text/javascript" src="./js/jquery.typeahead.js"></script>
 	</head>
 
 	<body>

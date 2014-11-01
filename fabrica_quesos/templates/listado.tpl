@@ -1,12 +1,12 @@
 {include file="header.tpl"}
 
+<link rel="stylesheet" href="css/jquery.typeahead.css">
+<script type="text/javascript" src="./js/jquery.typeahead.js"></script>
 
 <section class="container top">
-
 <div class="row">
 <div class="col-xs-6 col-md-6">
 <div class="row">
-
 	<h2 class="marg"> Productos </h2>
 	<div id="contenedor" class="carrusel">
 
@@ -64,5 +64,6 @@
 </div>
 </div>
 </section>
-
+<script type="text/javascript" src="./js/cliente.js"></script>
+<script type="text/javascript" src="./js/autocompletar.js"></script>
 {include file="footer.tpl"}

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.14, created on 2014-10-21 02:50:48
+<?php /* Smarty version Smarty-3.1.14, created on 2014-10-25 01:42:56
          compiled from ".\templates\listado.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:47865441a4e4550f43-56119736%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '424176c0cc6736f8339ef20dadf5a733624b5c10' => 
     array (
       0 => '.\\templates\\listado.tpl',
-      1 => 1413852640,
+      1 => 1414194144,
       2 => 'file',
     ),
   ),
@@ -27,13 +27,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <?php if ($_valid && !is_callable('content_5441a4e48372f0_34588754')) {function content_5441a4e48372f0_34588754($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
 
 
+<link rel="stylesheet" href="css/jquery.typeahead.css">
+<script type="text/javascript" src="./js/jquery.typeahead.js"></script>
 
 <section class="container top">
-
 <div class="row">
 <div class="col-xs-6 col-md-6">
 <div class="row">
-
 	<h2 class="marg"> Productos </h2>
 	<div id="contenedor" class="carrusel">
 
@@ -103,6 +103,7 @@ $_smarty_tpl->tpl_vars['img']->_loop = true;
 </div>
 </div>
 </section>
-
+<script type="text/javascript" src="./js/cliente.js"></script>
+<script type="text/javascript" src="./js/autocompletar.js"></script>
 <?php echo $_smarty_tpl->getSubTemplate ("footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
 <?php }} ?>
