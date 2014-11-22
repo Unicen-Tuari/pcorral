@@ -1,8 +1,49 @@
-.container {
-	margin-top: 35px;
-	padding-top: 25px;
+body 
+{ 
+	padding-top: 50px; 
+}
+footer 
+{
+	text-align: center;
+	background: #1A0E02;
+	height: 5%;
 }
 
-.glyphicon{
-	color: black;
+table
+{
+	font-size: 14px;
+}
+.navbar {
+	border-radius: 0px;
+	background: #1A0E02;
+}
+
+.tab-pane
+{
+	height: auto;
+	min-height: 350px;
+}
+.separador
+{
+	background-color: #AAA;
+	padding: 10px;
+	margin:20px 0;
+}
+h1,h2,h3
+{
+	margin-top: 10px;
+}
+#busquedacli
+{
+	display:none;
+}
+.detallemodal {
+	min-width:110px;
+	text-align:center;
+}
+.modal-footer {
+	margin-top: 0;
+}
+.margenb {
+	margin-bottom: 0;
 }

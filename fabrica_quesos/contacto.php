@@ -5,5 +5,12 @@
 	$model = new ModelQueso();
 	$view = new ViewQueso();
 	$controller = new ControllerQueso($model, $view);
-	$controller->imprimirPagina('contacto.tpl');
+	if (isset($_POST["consulta"]))
+	{
+		$controller->enviaMail($_POST);
+	}
+	else
+	{
+		$controller->imprimirPagina('contacto.tpl');
+	}
 ?>
