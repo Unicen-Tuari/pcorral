@@ -1,5 +1,5 @@
 <br>
-	<div class="seccion-chica">
+<div class="container">
 	<h3>Producto Nuevo</h3>
 	<form class="text-left" method="POST" action="" id="form_nuevoque">
 		<div class="form-group col-lg-12 input-group">
@@ -35,8 +35,8 @@
 			<input class="form-control" type="text" name="precio">
 		</div>
 		<div class="form-group col-lg-12">
-			<button class="color btn col-lg-1 col-lg-offset-4" type="reset">limpiar</button>
-			<button class="color btn col-lg-1 col-lg-offset-2" type="submit">confirmar</button>
+			<button class="btn btn-danger col-lg-1 col-lg-offset-4" type="reset"><span class="glyphicon glyphicon-remove"></span></button>
+			<button class="btn btn-success col-lg-1 col-lg-offset-2" type="submit"><span class="glyphicon glyphicon-ok"></span></button>
 		</div>
 	</form>
-	</div>
+</div>

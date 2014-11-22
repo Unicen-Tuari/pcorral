@@ -5,7 +5,7 @@ function radioBuscacli()
 	$('#check_na').prop('checked',true);
 	busquedaNA();
 }
-function radioBuscaque()
+function radioBuscarep()
 {
 	$('#campo_toggle').fadeIn(200);
 	$("#form_buscador").removeClass('has-success has-error');
@@ -26,38 +26,13 @@ function busquedaNA()
 	$('#input_secundario').attr('placeholder','Apellido');
 	$("#form_buscador").removeClass('has-success has-error');
 }
-function busquedaQues()
+function busquedaID()
 {
 	$('#input_principal').val('');
-	$('#input_principal').attr('placeholder','Articulo');
+	$('#input_principal').attr('placeholder','ID Reparación');
 	$('#input_secundario').slideUp(200);
 	$("#form_buscador").removeClass('has-success has-error');
 }
-$("#form_login").submit(function() 
-{
-	$.ajax({
-		type: "POST",
-		url: "login.php",
-		data:$("#form_login").serialize(),
-		success: function(data)
-		{
-			if (data == 'user')
-			{
-				alert('Usuario Invalido');
-			}
-			else if (data == 'pass')
-			{
-				alert('Password Invalido');
-			}
-			else
-			{
-				window.location = data;
-			}
-		}
-	});
-	
-	return false;
-});
 $('#buscar').on('submit','#form_buscador',function()  
 {
 	$.ajax({
@@ -83,25 +58,25 @@ $("#tab_container").ready(function()
 	$.ajax({
 		type: "POST",
 		url: "admin.php",
-		data: "que=true",
+		data: "rep=true",
 		success: function(data)
 		{
-			$("#tablaquesos").html(data);
-			$('a[href=#tablaquesos]').tab('show');
+			$("#tablareparaciones").html(data);
+			$('a[href=#tablareparaciones]').tab('show');
 		}
 	});
 	return false;
 });
-$("#tab_quesos").click(function() 
+$("#tab_reparaciones").click(function() 
 {
 	$.ajax({
 		type: "POST",
 		url: "admin.php",
-		data: "que=true",
+		data: "rep=true",
 		success: function(data)
 		{
-			$("#tablaquesos").html(data);
-			$('a[href=#tablaquesos]').tab('show');
+			$("#tablareparaciones").html(data);
+			$('a[href=#tablareparaciones]').tab('show');
 		}
 	});
 	return false;
@@ -121,6 +96,21 @@ $("#tab_clientes").click(function()
 	return false;
 });
 
+$("#tab_quesos").click(function() 
+{
+	$.ajax({
+		type: "POST",
+		url: "admin.php",
+		data: "que=true",
+		success: function(data)
+		{
+			$("#tablaquesos").html(data);
+			$('a[href=#tablaquesos]').tab('show');
+		}
+	});
+	return false;
+});
+
 $("#tab_buscar").click(function() 
 {
 	$.ajax({
@@ -135,16 +125,16 @@ $("#tab_buscar").click(function()
 	});
 	return false;
 });
-$("#tab_nuevoqueso").click(function() 
+$("#tab_nuevareparacion").click(function() 
 {
 	$.ajax({
 		type: "POST",
 		url: "admin.php",
-		data: "nuevoque=true",
+		data: "nuevarep=true",
 		success: function(data)
 		{
-			$("#nuevoqueso").html(data);
-			$('a[href=#nuevoqueso]').tab('show');
+			$("#nuevareparacion").html(data);
+			$('a[href=#nuevareparacion]').tab('show');
 		}
 	});
 	return false;
@@ -164,9 +154,24 @@ $("#tab_nuevocliente").click(function()
 	return false;
 });
 
-$('#tablaquesos').on('click','table tbody tr',function() 
+$("#tab_nuevoqueso").click(function() 
 {
-	$("#modal_body").load("admin.php",{id_queso:$(this).children('td').html()});
+	$.ajax({
+		type: "POST",
+		url: "admin.php",
+		data: "nuevoque=true",
+		success: function(data)
+		{
+			$("#nuevoqueso").html(data);
+			$('a[href=#nuevoqueso]').tab('show');
+		}
+	});
+	return false;
+});
+
+$('#tablareparaciones').on('click','table tbody tr',function() 
+{
+	$("#modal_body").load("admin.php",{id_reparacion:$(this).children('td').html()});
 	$('#modal_emergente').modal('show');
 	return false;
 });
@@ -177,16 +182,22 @@ $('#tablaclientes').on('click','table tbody tr',function()
 	return false;
 });
 
+$('#tablaquesos').on('click','table tbody tr',function() 
+{
+	$("#modal_body").load("admin.php",{id_cliente:$(this).children('td').html()});
+	$('#modal_emergente').modal('show');
+	return false;
+});
 $('#buscar').on('click','table tbody tr',function() 
 {
-	if (($('#buscar table thead tr th:eq(3)').text()) == 'articulo')
+	if (($('#buscar table thead tr th:eq(3)').text()) == 'Articulo')
 	{
-		$("#modal_body").load("admin.php",{id_queso:$(this).children('td').html()});
+		$("#modal_body").load("admin.php",{id_reparacion:$(this).children('td').html()});
 		$('#modal_emergente').modal('show');
 	}
 	else
 	{
-		$("#modal_body").load("admin.php",{id_queso:$(this).children('td').html()});
+		$("#modal_body").load("admin.php",{id_cliente:$(this).children('td').html()});
 		$('#modal_emergente').modal('show');
 	}
 	return false;
@@ -244,7 +255,31 @@ $('#nuevoqueso').on('closed.bs.alert','#alerta', function ()
 	});
 });
 
-
+$("#nuevareparacion").on('submit','#form_nuevarep',function() 
+{
+	$.ajax({
+		type: "POST",
+		url: "admin.php",
+		data:$("#form_nuevarep").serialize(),
+		success: function(data)
+		{
+			$('#nuevareparacion').html(data)
+		}
+	});
+	return false;
+});
+$('#nuevareparacion').on('closed.bs.alert','#alerta', function ()
+{
+	$.ajax({
+		type: "POST",
+		url: "admin.php",
+		data: "nuevarep=true",
+		success: function(data)
+		{
+			$("#nuevareparacion").html(data);
+		}
+	});
+});
 $('#logout').click(function()
 {
 	$.ajax({
@@ -291,23 +326,23 @@ function modificaFormcli()
 		return false;
 	});
 };
-$('#modal_body').on('click','#boton_modificaque',activaFormque);
-function activaFormque()
+$('#modal_body').on('click','#boton_modificarep',activaFormrep);
+function activaFormrep()
 {
-	$('#modal_body textarea,input').not("[name=id_que]").prop('readonly',false);
+	$('#modal_body textarea,input').not("[name=id_rep]").not("[name=fecha_ing]").not("[name=fecha_egr]").prop('readonly',false);
 	$('#modal_body select').prop('disabled',false);
-	$('#modal_body input[name=articulo]').focus();
-	$('#modal_body').off('click','#boton_modificaque',activaFormque).on('click','#boton_modificaque',modificaFormque);
-	$('#boton_modificaque').removeClass('btn-primary').addClass('btn-success');
-	$('#boton_modificaque span').removeClass('glyphicon-edit').addClass('glyphicon-ok');
+	$('#modal_body input[name=articulo_n]').focus();
+	$('#modal_body').off('click','#boton_modificarep',activaFormrep).on('click','#boton_modificarep',modificaFormrep);
+	$('#boton_modificarep').removeClass('btn-primary').addClass('btn-success');
+	$('#boton_modificarep span').removeClass('glyphicon-edit').addClass('glyphicon-ok');
 	$('#modal_emergente').off('hidden.bs.modal').on('hidden.bs.modal', function ()
 	{
-		$('#modal_body').off('click','#boton_modificaque',modificaFormque).on('click','#boton_modificaque',activaFormque);
+		$('#modal_body').off('click','#boton_modificarep',modificaFormrep).on('click','#boton_modificarep',activaFormrep);
 	});
 };
-function modificaFormque()
+function modificaFormrep()
 {	
-	$("#modal_body").load("admin.php",$("#actualiza_que").serializeArray());
+	$("#modal_body").load("admin.php",$("#actualiza_rep").serializeArray());
 	$('#modal_body').off('closed.bs.alert').on('closed.bs.alert','#alerta', function ()
 	{
 		$('#modal_emergente').modal('hide');
@@ -317,10 +352,10 @@ function modificaFormque()
 		$.ajax({
 			type: "POST",
 			url: "admin.php",
-			data: "que=true",
+			data: "rep=true",
 			success: function(data)
 			{
-				$("#tablaquesos").html(data);
+				$("#tablareparaciones").html(data);
 			}
 		});
 		return false;
@@ -352,7 +387,7 @@ $('#modal_body').on('click','#boton_borracli',function ()
 });
 $('#modal_body').on('click','#boton_borraque',function ()
 {
-	if (confirm('Seguro desea eliminar el producto?'))
+	if (confirm('Seguro desea eliminar la reparacion?'))
 	{
 		$("#modal_body").load("admin.php",{id_delque:$('#modal_body input[name=id_que]').val()});
 		$('#modal_body').off('closed.bs.alert').on('closed.bs.alert','#alerta', function ()

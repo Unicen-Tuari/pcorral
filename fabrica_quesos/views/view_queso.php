@@ -20,9 +20,9 @@ class ViewQueso
 		$this->smarty->assign("nombre_queso",$datos);
 		$this->smarty->display($template);
 	}
-	public function generaAlerta()
-	{
-		$this->smarty->display('alerta.tpl');
-	}
+	public function json($data){
+			echo json_encode($data);
+			exit();
+		}
 }
 ?>

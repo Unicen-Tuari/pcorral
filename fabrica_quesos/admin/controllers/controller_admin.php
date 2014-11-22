@@ -105,28 +105,5 @@ class Controlleradmin
 		$this->view->generaAlerta($this->model->deleteQue($id));
 	}
 
-
-public function imprimirBusquedaque($valor_principal,$valor_secundario,$tipo_busqueda)
-	{
-		if ($valor_principal == null)
-		{
-			$valor_principal = '%';
-		}
-		if ($valor_secundario == null)
-		{
-			$valor_secundario = '%';
-		}
-		$consulta=$this->model->consultaBusquedaque($valor_principal,$valor_secundario,$tipo_busqueda);
-		if ($consulta == null)
-		{
-			return false;
-		}
-		else
-		{
-			$this->view->generaBusquedaque($consulta);
-		}
-	}
-	
-
 }
 ?>

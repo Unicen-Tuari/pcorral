@@ -6,51 +6,17 @@
 	$view = new Viewadmin();
 	$controller = new Controlleradmin($model, $view);
 	session_start();
-
-	if (isset($_POST["que"]))
-	{
-		$controller->imprimirTablaque();
-	}
-	else if (isset($_POST["cli"]))
+	if (isset($_POST["cli"]))
 	{
 		$controller->imprimirTablacli();
-	}
-	else if (isset($_POST["buscar"]))
-	{
-		$controller->imprimirBuscador();
-	}
-	else if (isset($_POST["nuevoque"]))
-	{
-		$controller->imprimirFormque();
 	}
 	else if (isset($_POST["nuevocli"]))
 	{
 		$controller->imprimirFormcli();
 	}
-	else if (isset($_POST["id_queso"]))
-	{
-		$controller->imprimirDetalleque($_POST["id_queso"]);
-	}
 	else if (isset($_POST["id_cliente"]))
 	{
 		$controller->imprimirDetallecli($_POST["id_cliente"]);
-	}
-	else if (isset($_POST["tipobusqueda"]))
-	{
-		if ($_POST["tipobusqueda"] == 'queso')
-		{
-			if (isset($_POST["campobusqueda"]))
-			{
-				$controller->imprimirBusquedaque($_POST["valor"],$_POST["valor2"],$_POST["campobusqueda"]);
-			}
-		}
-		else
-		{
-			if (isset($_POST["campobusqueda"]))
-			{
-				$controller->imprimirBusquedacli($_POST["valor"],$_POST["valor2"],$_POST["campobusqueda"]);
-			}
-		}
 	}
 	else if (isset($_POST["nombre"]))
 	{
@@ -60,22 +26,37 @@
 	{
 		$controller->actualizaCli($_POST);
 	}
-	else if (isset($_POST["id_q"]))
-	{
-		$controller->actualizaQue($_POST);
-	}
 	else if (isset($_POST["id_delcli"]))
 	{
 		$controller->borrarCli($_POST["id_delcli"]);
 	}
-	else if (isset($_POST["id_delque"]))
+
+
+	else if (isset($_POST["que"]))
 	{
-		$controller->borrarQue($_POST["id_delque"]);
+		$controller->imprimirTablaque();
+	}
+	else if (isset($_POST["nuevoque"]))
+	{
+		$controller->imprimirFormque();
+	}
+	else if (isset($_POST["id_queso"]))
+	{
+		$controller->imprimirDetalleque($_POST["id_queso"]);
 	}
 	else if (isset($_POST["articulo"]))
 	{
 		$controller->insertaQue($_POST);
 	}
+	else if (isset($_POST["id_q"]))
+	{
+		$controller->actualizaQue($_POST);
+	}
+	else if (isset($_POST["id_delque"]))
+	{
+		$controller->borrarQue($_POST["id_delque"]);
+	}
+	
 	else if (isset($_SESSION["username"]))
 	{
 		$controller->imprimirPagina();

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.14, created on 2014-10-15 01:09:19
+<?php /* Smarty version Smarty-3.1.14, created on 2014-11-03 23:17:29
          compiled from ".\templates\pagdetallecli.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:121405439722533c373-96798664%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '28e0e430632a33d667ea17fe8dddaea11308ee9d' => 
     array (
       0 => '.\\templates\\pagdetallecli.tpl',
-      1 => 1413328113,
+      1 => 1413052040,
       2 => 'file',
     ),
   ),
@@ -61,8 +61,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 	</div>
 	<div class="modal-footer">
 		<div class="form-group">
-			<button type="button" id="boton_borracli" class="color btn col-lg-3 pull-left">eliminar</button>
-			<button type="button" id="boton_modificacli" class="color btn col-lg-3 pull-right">editar</button>
+			<button type="button" id="boton_borracli" class="btn btn-danger col-lg-3 pull-left"><span class="glyphicon glyphicon-trash"></span></button>
+			<button type="button" id="boton_modificacli" class="btn btn-primary col-lg-3 pull-right"><span class="glyphicon glyphicon-edit"></span></button>
 		</div>
 	</div>
 </form><?php }} ?>

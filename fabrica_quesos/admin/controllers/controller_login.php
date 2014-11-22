@@ -3,6 +3,7 @@ class Controllerlogin
 {
 	private $model;
 	private $view;
+	private $controller;
  
 	public function __construct($model, $view)
 	{
@@ -21,14 +22,18 @@ class Controllerlogin
 			header('Location: admin.php');
 		}
 	}
-	public function loginUsuario($formulario)
+public function loginUsuario($formulario)
 	{
 		$user = $this->model->getUsuario($formulario["username"]);
-		if (($user[0]["username"] = md5($formulario["username"])) && ($user[0]["password"] = md5($formulario["password"])))
+		if ((empty($user)) or ($user[0]["password"] != ($formulario["password"])))
+		{
+			header('Location: login.php');
+		}
+		else
 		{
 			session_start();
 			$_SESSION["username"] = $user[0]["username"];
-			echo "admin.php";
+			header('Location: admin.php');
 		}
 	}
 }
