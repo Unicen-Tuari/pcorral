@@ -60,7 +60,7 @@
 	{
 		$controller->actualizaCli($_POST);
 	}
-	else if (isset($_POST["id_que"]))
+	else if (isset($_POST["id_q"]))
 	{
 		$controller->actualizaQue($_POST);
 	}

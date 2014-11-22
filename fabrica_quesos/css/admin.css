@@ -78,3 +78,8 @@ h1,h2,h3
 .margenb {
 	margin-bottom: 0;
 }
+
+.form-control {
+	background-color: #1A0E02;
+	color: white;
+}
