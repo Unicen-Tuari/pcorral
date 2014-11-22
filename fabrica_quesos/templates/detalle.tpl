@@ -2,7 +2,9 @@
 
 {foreach $nombre_queso as $queso}
 	<div class="row">
+		<div class="col-xs-8 col-md-8">
 			<h2> {$queso.nombre} </h2>
+		</div>
 	</div>
 	<div class="row">
 		<div class="col-xs-8 col-md-8">

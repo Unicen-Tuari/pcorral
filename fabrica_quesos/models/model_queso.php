@@ -30,19 +30,7 @@ class ModelQueso
 	
 	public function consultaQuesos($nombre)
 	{
-		$sql = "SELECT * FROM queso WHERE upper(queso.nombre) like upper('%$nombre%') LIMIT 1;";
-		$resultado = $this->conn->prepare($sql);
-		$resultado->execute();
-		if (!$resultado)
-		{
-			die(print($this->conn->errorInfo()[2]));
-		}
-		return $resultado->fetchAll(PDO::FETCH_ASSOC);
-	}
-
-		public function consultaTipoQueso($tipo)
-	{
-		$sql = "SELECT nombre FROM queso WHERE tipo like '$tipo';";
+		$sql = "SELECT * FROM queso WHERE upper(queso.nombre) like upper('%$nombre%');";
 		$resultado = $this->conn->prepare($sql);
 		$resultado->execute();
 		if (!$resultado)

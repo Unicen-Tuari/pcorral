@@ -8,7 +8,9 @@
 	if (isset($_POST["consulta"]))
 	{
 		$controller->enviaMail($_POST);
-	} else {
+	}
+	else
+	{
 		$controller->imprimirPagina('contacto.tpl');
-		}
+	}
 ?>

@@ -1,0 +1,6 @@
+--login
+
+session_start();
+
+$_Session['usuario']='diego';
+
