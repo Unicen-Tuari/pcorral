@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.14, created on 2014-10-11 20:25:26
+<?php /* Smarty version Smarty-3.1.14, created on 2014-10-15 01:06:00
          compiled from ".\templates\nuevoqueso.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2893854396070e3b2f3-13691049%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '425a9fc8677aeb1a260eff63543f6a37b1d6a21d' => 
     array (
       0 => '.\\templates\\nuevoqueso.tpl',
-      1 => 1413051865,
+      1 => 1413327943,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_54396070f297b2_69722594')) {function content_54396070f297b2_69722594($_smarty_tpl) {?><br>
-<div class="container">
+	<div class="seccion-chica">
 	<h3>Producto Nuevo</h3>
 	<form class="text-left" method="POST" action="" id="form_nuevoque">
 		<div class="form-group col-lg-12 input-group">
@@ -56,9 +56,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 			<input class="form-control" type="text" name="precio">
 		</div>
 		<div class="form-group col-lg-12">
-			<button class="btn btn-danger col-lg-1 col-lg-offset-4" type="reset"><span class="glyphicon glyphicon-remove"></span></button>
-			<button class="btn btn-success col-lg-1 col-lg-offset-2" type="submit"><span class="glyphicon glyphicon-ok"></span></button>
+			<button class="color btn col-lg-1 col-lg-offset-4" type="reset">limpiar</button>
+			<button class="color btn col-lg-1 col-lg-offset-2" type="submit">confirmar</button>
 		</div>
 	</form>
-</div>
-<?php }} ?>
+	</div><?php }} ?>

@@ -1,31 +1,31 @@
-<!DOCTYPE html>	
-<html>
-<head>
-	<title>TT Taller de Reparacion</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="../css/bootstrap.min.css" media="screen">
-	<link rel="stylesheet" href="../css/own.css" media="screen">
-</head>
-<body>
-	<div class="container">
-		<form class="col-lg-4 col-lg-offset-4" method="POST" id="form_login" action="">
-			<legend class="text-center">DataOS Administración</legend>
-			<div class="form-group input-group">
-				<span class="input-group-addon glyphicon glyphicon-user"></span>
-				<input type="text" name="username" placeholder="Usuario" class="form-control" autofocus required>
-			</div>
-			<div class="form-group input-group">
-				<span class="input-group-addon glyphicon glyphicon-lock"></span>
-				<input type="password" name="password" placeholder="Contraseña" class="form-control" required>
-			</div>
-			<div class="form-group text-center">
-				<button type="submit" class="btn btn-primary btn-block"><span class="glyphicon glyphicon-ok"></span></button>
-			</div>
-		</form>
-	</div> 
-	<script type="text/javascript" src="../js/jquery-1.10.0.min.js"></script>
-	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="./js/admin.js"></script>
-</body>
-</html>
+{include file="header.tpl"}
+
+<script type="text/javascript" SRC=js/queso.js> </script>
+
+<section class="container seccion-media">
+    <div class="row">
+        <div class="col-xs-6 col-md-6">
+    <h3>Clientes Registrados</h3>
+    <form class="col-lg-4 col-lg-offset-4" method="POST" id="form_login" action="">
+        <div class="form-group">
+            <label class="sr-only" for="usuario">Usuario: </label>
+            <input type="text" name="username" placeholder="*Usuario" class="form-control" autofocus required>
+        </div>
+        <div class="form-group">
+            <label class="sr-only" for="pass">Contrase&ntilde;a: </label>
+            <input type="password" name="password" placeholder="*Contraseña" class="form-control" required>
+        </div>
+
+        <button class="color btn btn-default bot centro" type="submit">ingresar</button>
+    </form>
+</div>
+    <div class="row">
+        <div class="col-xs-6 col-md-6">
+    <h3>Clientes Nuevos</h3>
+        <p>Al crear una cuenta en nuestra tienda usted podrá avanzar por el proceso de compra m&aacute;s r&aacute;pido, utilizando el carrito de compras.</p>
+        <a href="registrarse.php"><button class="color btn btn-default bot centro" type="submit" onclick="return validar(this);">registrarme</button></a>
+  </div>
+</div>
+</section>
+
+{include file="footer.tpl"}

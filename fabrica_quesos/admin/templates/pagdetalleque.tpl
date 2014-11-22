@@ -31,6 +31,11 @@
 			<span class="input-group-addon input-sm detallemodal">Conservacion</span>
 			<input class="form-control input-sm" type="text" name="conservacion" value="{$detalleque.conservacion}" readonly>
 		</div>
+
+		<div class="form-group input-group margenb">
+			<span class="input-group-addon input-sm detallemodal">Imagen</span>
+			<input class="form-control input-sm" type="text" name="imagen" value="{$detalleque.imagen}" readonly>
+		</div>
 		<div class="form-group input-group margenb">
 			<span class="input-group-addon input-sm detallemodal">Precio</span>
 			<input class="form-control input-sm" type="text" name="precio" value="{$detalleque.precio}" readonly>
@@ -38,8 +43,8 @@
 	</div>
 	<div class="modal-footer">
 		<div class="form-group">
-			<button type="button" id="boton_borraque" class="btn btn-danger col-lg-3 pull-left"><span class="glyphicon glyphicon-trash"></span></button>
-			<button type="button" id="boton_modificaque" class="btn btn-primary col-lg-3 pull-right"><span class="glyphicon glyphicon-edit"></span></button>
+			<button type="button" id="boton_borraque" class="color btn col-lg-3 pull-left">eliminar</button>
+			<button type="button" id="boton_modificaque" class="color btn col-lg-3 pull-right">editar</button>
 		</div>
 	</div>
 </form>

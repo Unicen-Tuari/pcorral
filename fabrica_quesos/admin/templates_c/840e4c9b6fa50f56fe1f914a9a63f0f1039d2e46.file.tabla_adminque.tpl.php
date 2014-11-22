@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.14, created on 2014-10-11 20:29:12
+<?php /* Smarty version Smarty-3.1.14, created on 2014-10-15 00:23:19
          compiled from ".\templates\tabla_adminque.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2802154396056aa3435-55022122%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '840e4c9b6fa50f56fe1f914a9a63f0f1039d2e46' => 
     array (
       0 => '.\\templates\\tabla_adminque.tpl',
-      1 => 1413052130,
+      1 => 1413325392,
       2 => 'file',
     ),
   ),

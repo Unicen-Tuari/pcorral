@@ -1,4 +1,25 @@
-<br>
+<?php /* Smarty version Smarty-3.1.14, created on 2014-10-15 01:15:20
+         compiled from ".\templates\buscador.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:21275439c940d9d085-00958933%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '30b60cfc658cff124c81ffc43188cdf6be98b5fd' => 
+    array (
+      0 => '.\\templates\\buscador.tpl',
+      1 => 1413328513,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '21275439c940d9d085-00958933',
+  'function' => 
+  array (
+  ),
+  'version' => 'Smarty-3.1.14',
+  'unifunc' => 'content_5439c941075df9_65203181',
+  'has_nocache_code' => false,
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_5439c941075df9_65203181')) {function content_5439c941075df9_65203181($_smarty_tpl) {?><br>
 	<div class="seccion-chica">
 		<form method="POST" action="" id="form_buscador">
 			<div class="form-group col-lg-12 text-right">
@@ -32,4 +53,4 @@
 				<button class="color btn col-lg-1 col-lg-offset-2" type="submit">buscar</button>
 			</div>
 		</form>
-	</div>
+	</div><?php }} ?>

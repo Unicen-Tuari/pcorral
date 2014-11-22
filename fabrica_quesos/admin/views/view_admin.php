@@ -66,7 +66,7 @@ class Viewadmin
 	{
 		if($id == -1)
 		{
-			$this->smarty->assign("mensaje",'Reparacion agregada exitosamente.');
+			$this->smarty->assign("mensaje",'Producto agregado exitosamente.');
 			$this->smarty->display('alerta.tpl');	
 		}
 		else if ($id == -2)
@@ -81,12 +81,12 @@ class Viewadmin
 		}
 		else if ($id == -4)
 		{
-			$this->smarty->assign("mensaje",'Reparacion eliminada exitosamente');
+			$this->smarty->assign("mensaje",'Producto eliminado exitosamente');
 			$this->smarty->display('alerta.tpl');
 		}
 		else if ($id == -5)
 		{
-			$this->smarty->assign("mensaje",'Reparacion actualizada exitosamente');
+			$this->smarty->assign("mensaje",'Producto actualizado exitosamente');
 			$this->smarty->display('alerta.tpl');
 		}
 		else

@@ -69,6 +69,8 @@ class Modeladmin
 	}
 
 
+
+	
 	public function consultaQuesos()
 	{
 		$sql = "SELECT * FROM QUESO;";
@@ -174,5 +176,21 @@ class Modeladmin
 		}
 		return -3;
 	}
+
+		public function consultaBusquedaque($valor_principal,$tipo_busqueda)
+	{
+		if ($tipo_busqueda == 'articulo')
+		{
+			$sql = "SELECT * FROM QUESO WHERE upper(queso.nombre) like upper('%$valor_principal%');";
+		}
+		$resultado = $this->conn->prepare($sql);
+		$resultado->execute();
+		if (!$resultado)
+		{
+			die(print($this->conn->errorInfo()[2]));
+		}
+		return $resultado->fetchAll(PDO::FETCH_ASSOC);
+	}
+
 }
 ?>
