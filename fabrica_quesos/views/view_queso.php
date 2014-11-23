@@ -20,9 +20,5 @@ class ViewQueso
 		$this->smarty->assign("nombre_queso",$datos);
 		$this->smarty->display($template);
 	}
-	public function generaAlerta()
-	{
-		$this->smarty->display('alerta.tpl');
-	}
 }
 ?>

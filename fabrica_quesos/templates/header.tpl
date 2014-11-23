@@ -8,10 +8,9 @@
 		<title> F&aacute;brica de Quesos</title>
 		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
 		<link href="css/queso.css" rel="stylesheet" media="screen">
-
-		<script src="./js/jquery-1.10.0.min.js"></script>
-		<script type="text/javascript" src="./js/bootstrap.min.js"></script>
-	
+		<link rel="stylesheet" href="css/jquery.typeahead.css">
+		<script src="./js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="./js/jquery.typeahead.js"></script>
 	</head>
 
 	<body>

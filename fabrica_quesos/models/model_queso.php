@@ -30,7 +30,7 @@ class ModelQueso
 	
 	public function consultaQuesos($nombre)
 	{
-		$sql = "SELECT * FROM queso WHERE upper(queso.nombre) like upper('%$nombre%');";
+		$sql = "SELECT * FROM queso WHERE upper(queso.nombre) like upper('%$nombre%') LIMIT 1;";
 		$resultado = $this->conn->prepare($sql);
 		$resultado->execute();
 		if (!$resultado)
