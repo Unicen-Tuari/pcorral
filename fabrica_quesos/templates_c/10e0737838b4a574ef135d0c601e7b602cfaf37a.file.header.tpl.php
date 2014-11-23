@@ -1,25 +1,25 @@
-<?php /* Smarty version Smarty-3.1.14, created on 2014-10-20 03:21:08
+<?php /* Smarty version Smarty-3.1.14, created on 2014-10-08 00:47:29
          compiled from ".\templates\header.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:250915441a4e4921932-89735109%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:71215425e9319b5978-91893037%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '10e0737838b4a574ef135d0c601e7b602cfaf37a' => 
     array (
       0 => '.\\templates\\header.tpl',
-      1 => 1413768063,
+      1 => 1412722029,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '250915441a4e4921932-89735109',
+  'nocache_hash' => '71215425e9319b5978-91893037',
   'function' => 
   array (
   ),
   'version' => 'Smarty-3.1.14',
-  'unifunc' => 'content_5441a4e4929631_30611590',
+  'unifunc' => 'content_5425e9319ffd04_32480008',
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5441a4e4929631_30611590')) {function content_5441a4e4929631_30611590($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_5425e9319ffd04_32480008')) {function content_5425e9319ffd04_32480008($_smarty_tpl) {?><!DOCTYPE html>
 
 <html lang="en">
 	<head>
@@ -29,9 +29,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		<title> F&aacute;brica de Quesos</title>
 		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
 		<link href="css/queso.css" rel="stylesheet" media="screen">
-		<link rel="stylesheet" href="css/jquery.typeahead.css">
-		<script src="./js/jquery-1.11.1.min.js"></script>
-		<script type="text/javascript" src="./js/jquery.typeahead.js"></script>
+
+		<script src="./js/jquery-1.10.0.min.js"></script>
+		<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+	
 	</head>
 
 	<body>
