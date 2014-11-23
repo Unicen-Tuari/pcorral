@@ -29,7 +29,7 @@ class ModelQueso
 	}
 	
 	public function consultaQuesos($nombre)
-	{	//limito la busqueda. devuelve solo el primer resultado
+	{
 		$sql = "SELECT * FROM queso WHERE upper(queso.nombre) like upper('%$nombre%') LIMIT 1;";
 		$resultado = $this->conn->prepare($sql);
 		$resultado->execute();
