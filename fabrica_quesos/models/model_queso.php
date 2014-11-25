@@ -17,7 +17,7 @@ class ModelQueso
 	}
 	
 	public function listadoQuesos()
-	{
+	{ //muestra todos los quesos
 		$sql = "SELECT * FROM queso;";
 		$resultado = $this->conn->prepare($sql);
 		$resultado->execute();
