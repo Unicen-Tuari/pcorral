@@ -1,4 +1,4 @@
-{include file="header.tpl"}
+
 
 <div class="container">
 	<div class="row">
@@ -7,7 +7,7 @@
 	<div class="row">
 		<div class="col-xs-6 col-md-6">
 			<p>Pehuaj&oacute; se encuentra ubicada en el noroeste de la provincia de Buenos Aires en el borde occidental de la llamada Pampa H&uacute;meda, a 365 km de Buenos Aires.</p>
-			<p>La f&aacute;brica de quesos Nelly se encuentra en Lopez y Planes 50.</p>
+			<p>La f&aacute;brica de quesos se encuentra en Lopez y Planes 50.</p>
 			<p> Los esperamos!!! </p>
 		</div>
 		<div class="col-xs-6 col-md-6">

@@ -1,4 +1,4 @@
-{include file="header.tpl"}
+
 
 <section class="container">
 	<h2> Misi&oacute;n </h2>

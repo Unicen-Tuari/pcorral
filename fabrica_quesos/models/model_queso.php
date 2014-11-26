@@ -17,7 +17,7 @@ class ModelQueso
 	}
 	
 	public function listadoQuesos()
-	{ //muestra todos los quesos
+	{
 		$sql = "SELECT * FROM queso;";
 		$resultado = $this->conn->prepare($sql);
 		$resultado->execute();
@@ -30,7 +30,7 @@ class ModelQueso
 	
 	public function consultaQuesos($nombre)
 	{
-		$sql = "SELECT * FROM queso WHERE upper(queso.nombre) like upper('%$nombre%') LIMIT 1;";
+		$sql = "SELECT * FROM queso WHERE upper(queso.nombre) like upper('%$nombre%');";
 		$resultado = $this->conn->prepare($sql);
 		$resultado->execute();
 		if (!$resultado)
