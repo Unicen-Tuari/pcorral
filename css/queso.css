@@ -1,0 +1,160 @@
+body {
+	background-image: url('../images/fondo.jpg');
+	background-size: 100%;
+}
+
+html, body{
+	height: 100%;
+}
+
+a{
+	cursor:  pointer;
+}
+
+.portada {
+	background-color: white;
+	height: auto;
+	margin: 0px;
+	min-height: 20%;
+}
+
+.navbar {
+	border-radius: 0px;
+	background: #1A0E02;
+	min-height: 7%; 
+}
+
+.container {
+	height: auto;
+	min-height: 71%;
+	background-image: url('../images/nota2.jpg');
+	background-size: 100%;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top: 8%;
+}
+
+.container:after{
+	width: 100%;
+	height: 5px;
+	display: block;
+	clear:both;
+}
+
+.top {
+	padding-top: 0;
+}
+
+.seccion-chica {
+	width: 50%;
+	background-size: 190%;
+}
+
+h2 {
+	text-align: center;
+}
+
+p, h2, h3, h4, li, .control-label, .negrita {
+	color:black;
+}
+
+iframe {
+	width:90%;
+	height:130%;
+	margin-bottom: 5%;
+}
+
+.form-control {
+	width: 90%;
+	background-color: #1A0E02;
+	color: white;
+	margin-left: 5%;
+}
+
+.fila {
+	border-top: double;
+	border-bottom: double;
+}
+
+.lista {
+	border-bottom: ridge;
+	padding-top: 10px;
+}
+
+.seccion-media {
+	width: 70%;
+}
+
+.color {
+	background-color: #1A0E02;
+	color: #777;
+}
+
+.dropdown-menu li a:hover{
+	background-color: transparent;
+	color: black;
+	font-weight: bold;
+}
+
+.trasparente{
+	background-color: #1A0E02;
+}
+
+.typeahead-container{
+	width: 85%;
+}
+
+.marg{
+	padding-top: 12%;
+} 
+
+.bot {
+	float: right;
+	background-color: #1A0E02;
+	color: #777;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+.centro {
+	margin-right: 50%;
+	margin-bottom: 3%;
+}
+
+.bot:hover,
+.bot:focus {
+  color: #fff;
+  background-color: #1A0E02;
+ }
+
+.carrusel {
+	width: 90%;
+	margin-left: 5%;
+	margin-bottom: 10%;
+}
+
+.item {
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+.carousel-indicators .active {
+	background-color: #666666;
+}
+
+.carousel-indicators li {
+	border-color: #666666;
+}
+
+.indicador {
+	font-size: 50px;
+	margin-top: 70%;
+}
+
+footer {
+	text-align: center;
+	background: #1A0E02;
+	height: auto;
+	min-height: 5%;
+	margin: -5px auto 0;
+}
